@@ -1,0 +1,15 @@
+C:\Users\moral\OneDrive\Desktop\School\cse210\w06\EternalityCSharp\eternalQuest\bin\Debug\net8.0\eternalQuest.exe
+C:\Users\moral\OneDrive\Desktop\School\cse210\w06\EternalityCSharp\eternalQuest\bin\Debug\net8.0\eternalQuest.deps.json
+C:\Users\moral\OneDrive\Desktop\School\cse210\w06\EternalityCSharp\eternalQuest\bin\Debug\net8.0\eternalQuest.runtimeconfig.json
+C:\Users\moral\OneDrive\Desktop\School\cse210\w06\EternalityCSharp\eternalQuest\bin\Debug\net8.0\eternalQuest.dll
+C:\Users\moral\OneDrive\Desktop\School\cse210\w06\EternalityCSharp\eternalQuest\bin\Debug\net8.0\eternalQuest.pdb
+C:\Users\moral\OneDrive\Desktop\School\cse210\w06\EternalityCSharp\eternalQuest\obj\Debug\net8.0\eternalQuest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moral\OneDrive\Desktop\School\cse210\w06\EternalityCSharp\eternalQuest\obj\Debug\net8.0\eternalQuest.AssemblyInfoInputs.cache
+C:\Users\moral\OneDrive\Desktop\School\cse210\w06\EternalityCSharp\eternalQuest\obj\Debug\net8.0\eternalQuest.AssemblyInfo.cs
+C:\Users\moral\OneDrive\Desktop\School\cse210\w06\EternalityCSharp\eternalQuest\obj\Debug\net8.0\eternalQuest.csproj.CoreCompileInputs.cache
+C:\Users\moral\OneDrive\Desktop\School\cse210\w06\EternalityCSharp\eternalQuest\obj\Debug\net8.0\eternalQuest.sourcelink.json
+C:\Users\moral\OneDrive\Desktop\School\cse210\w06\EternalityCSharp\eternalQuest\obj\Debug\net8.0\eternalQuest.dll
+C:\Users\moral\OneDrive\Desktop\School\cse210\w06\EternalityCSharp\eternalQuest\obj\Debug\net8.0\refint\eternalQuest.dll
+C:\Users\moral\OneDrive\Desktop\School\cse210\w06\EternalityCSharp\eternalQuest\obj\Debug\net8.0\eternalQuest.pdb
+C:\Users\moral\OneDrive\Desktop\School\cse210\w06\EternalityCSharp\eternalQuest\obj\Debug\net8.0\eternalQuest.genruntimeconfig.cache
+C:\Users\moral\OneDrive\Desktop\School\cse210\w06\EternalityCSharp\eternalQuest\obj\Debug\net8.0\ref\eternalQuest.dll
