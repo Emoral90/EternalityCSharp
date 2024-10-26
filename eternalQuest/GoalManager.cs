@@ -1,3 +1,6 @@
+using System;
+using System.IO;
+
 public class GoalManager
 {
     private List<Goal> _goals;
@@ -11,7 +14,41 @@ public class GoalManager
 
     public void Start()
     {
-        // Initial menu and user interaction
+        while(true)
+        {
+            Console.WriteLine("Select an activity:");
+            Console.WriteLine("1: Complete a Simple Goal");
+            Console.WriteLine("1: Record an Eternal Goal");
+            Console.WriteLine("1: Complete a Checklist Goal");
+            string choice = Console.ReadLine();
+
+        switch (choice)
+        {
+            case "1":
+                CreateGoal();
+                break;
+            case "2":
+                RecordEvent();
+                break;
+            case "3":
+                ListGoals();
+                break;
+            case "4":
+                DisplayPlayerInfo();
+                break;
+            case "5":
+                SaveGoals();
+                break;
+            case "6":
+                LoadGoals();
+                break;
+            case "7":
+                Console.WriteLine("Exiting...");
+                return;
+            default:
+                Console.WriteLine("Invalid choice. Please try again.");
+                break;        
+        }
     }
 
     public void DisplayPlayerInfo()
@@ -21,6 +58,7 @@ public class GoalManager
 
     public void ListGoals()
     {
+        Console.WriteLine("Goals:");
         foreach (Goal goal in _goals)
         {
             Console.WriteLine(goal.GetDetailsString());
@@ -29,16 +67,56 @@ public class GoalManager
 
     public void CreateGoal(Goal goal)
     {
-        _goals.Add(goal);
+        Console.WriteLine("Select a goal type:");
+        Console.WriteLine("1: Simple Goal");
+        Console.WriteLine("2: Eternal Goal");
+        Console.WriteLine("3: Checklist Goal");
+
+        string choice = Console.ReadLine();
+        Console.Write("Enter goal name: ");
+        string name = Console.ReadLine();
+        Console.Write("Enter goal description: ");
+        string description = Console.ReadLine();
+        Console.Write("Enter points for this goal: ");
+        int points = int.Parse(Console.ReadLine());
+
+        switch (choice)
+        {
+            case "1":
+                _goals.Add(new SimpleGoal(name, description, points));
+                break;
+            case "2":
+                _goals.Add(new EternalGoal(name, description, points));
+                break;
+            case "3":
+                Console.Write("Enter target completion count: ");
+                int target = int.Parse(Console.ReadLine());
+                Console.Write("Enter bonus points for completing target: ");
+                int bonus = int.Parse(Console.ReadLine());
+                _goals.Add(new ChecklistGoal(name, description, points, target, bonus));
+                break;
+            default:
+                Console.WriteLine("Invalid choice.");
+                break;
+        }
     }
 
     public void RecordEvent(string goalName)
     {
-        var goal = _goals.Find(g => g.GetStringRepresentation().Contains(goalName));
-        if (goal != null)
+        Console.WriteLine("Select a goal to record an event:");
+        for (int i = 0; i < _goals.Count; i++)
         {
-            // goal.RecordEvent();
-            // _score += goal.IsComplete() ? _points : 0; // Update based on type
+            Console.WriteLine($"{i + 1}: {_goals[i].GetDetailsString()}");
+        }
+
+        int goalIndex = int.Parse(Console.ReadLine()) - 1;
+        if (goalIndex >= 0 && goalIndex < _goals.Count)
+        {
+            _goals[goalIndex].RecordEvent();
+        }
+        else
+        {
+            Console.WriteLine("Invalid choice.");
         }
     }
 
